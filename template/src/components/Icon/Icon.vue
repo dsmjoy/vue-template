@@ -6,8 +6,7 @@
 </template>
 
 <script>
-// import '../../static/icons/loading.svg'
-// import '../../static/icons/back.svg'
+
 const requireAll = requireContext => requireContext.keys().map(requireContext)
 const req = require.context('../../static/icons', false, /\.svg$/)
 requireAll(req)
