@@ -8,7 +8,7 @@
 <script>
 
 const requireAll = requireContext => requireContext.keys().map(requireContext)
-const req = require.context('../../static/icons', false, /\.svg$/)
+const req = require.context('@/icons', false, /\.svg$/)
 requireAll(req)
 
 export default {
