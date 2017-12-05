@@ -66,6 +66,17 @@ let webpackConfig = {
                     }
                 }
             },
+
+            {
+                test: /\.(svg)(\?.+)?$/,
+                include: [path.resolve(__dirname, './src/static/icons')],
+                use: {
+                    loader: 'svg-sprite-loader',
+                    options: {
+                        symbolId: 'icon-[name]'
+                    }
+                }
+            },
             
             {
                 test: /\.(png|jpg|gif)(\?.+)?$/,
@@ -80,7 +91,7 @@ let webpackConfig = {
             
             {
                 test: /\.(eot|ttf|woff|woff2|svg|svgz)(\?.+)?$/,
-                exclude: /favicon\.png$/,
+                exclude: [path.resolve(__dirname, './src/static/icons')],
                 use: [{
                     loader: 'url-loader',
                     options: {

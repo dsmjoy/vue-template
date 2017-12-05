@@ -19,11 +19,13 @@ const routes = [
     },
     {
         name: 'home',
+        path: '/home',
         component: Home,
         children: homeRoutes
     },
     {
         name: 'user',
+        path: '/user',
         component: User,
         children: userRoutes
     }

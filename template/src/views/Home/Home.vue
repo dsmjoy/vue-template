@@ -2,10 +2,6 @@
 <template lang="html">
     <div id="home" class="home">
 
-        <Hello></Hello>
-
-        <Card></Card>
-
         <router-view></router-view>
         
     </div>
