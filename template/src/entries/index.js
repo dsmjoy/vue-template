@@ -1,5 +1,5 @@
 
-import '@styles/index.scss';
+import '@/styles/index.scss';
 
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -11,9 +11,16 @@ import App from './app/app.vue'
 import store from 'Store/index'
 import router from 'Router/index'
 
+axios.defaults.transformRequest = [
+    function (data) {
+        return Qs.stringify(data)
+    }
+]
+
 new Vue({
     el: '#app',
     router,
     store,
     render: h => h(App)
 })
+

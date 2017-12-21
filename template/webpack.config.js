@@ -38,7 +38,7 @@ let webpackConfig = {
             'Service': path.resolve(__dirname, './src/service'),
             'Comp': path.resolve(__dirname, './src/components'),
             'Views': path.resolve(__dirname, './src/views'),
-            'Api': path.resolve(__dirname, './src/api'),
+            'Api': path.resolve(__dirname, './src/api')
         }
     },
 
