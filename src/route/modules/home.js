@@ -8,8 +8,8 @@ const routes = [
         name: 'homeindex',
         path: '/home/index',    
         component: resolve => {
-            require.ensure(['Views/Home/Index/Index.vue'], () => {
-                resolve(require('Views/Home/Index/Index.vue'))
+            require.ensure(['@/views/Home/Index/Index.vue'], () => {
+                resolve(require('@/views/Home/Index/Index.vue'))
             })
         }
     }

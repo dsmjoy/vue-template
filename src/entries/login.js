@@ -1,5 +1,5 @@
 
-import '@styles/index.scss';
+import '@/styles/index.scss';
 
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -10,7 +10,7 @@ Vue.use(Router)
 Vue.config.devtools = true
 
 import Login from './login/login.vue'
-import store from 'Store/index'
+import store from '@/store/index'
 
 const routes = [
 

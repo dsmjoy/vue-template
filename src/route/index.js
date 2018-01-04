@@ -4,12 +4,12 @@ Vue.use(Router)
 
 /** home routes **/
 import homeRoutes from './modules/home'
-import Home from 'Views/Home/Home.vue'
+import Home from '@/top-views/Home/Home.vue'
 /** home routes **/
 
 /** user routes **/
 import userRoutes from './modules/home'
-import User from 'Views/User/User.vue'
+import User from '@/top-views/User/User.vue'
 /** user routes **/
 
 const routes = [

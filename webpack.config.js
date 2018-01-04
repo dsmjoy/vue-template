@@ -29,16 +29,7 @@ let webpackConfig = {
 
     resolve: {
         alias: {
-            '@': path.resolve(__dirname, './src'),
-            'PImg': path.resolve(__dirname, './src/static/images'),
-            'PCss': path.resolve(__dirname, './src/static/css'),
-            'PJs': path.resolve(__dirname, './src/static/js'),        
-            'Store': path.resolve(__dirname, './src/store'),
-            'Router': path.resolve(__dirname, './src/route'),
-            'Service': path.resolve(__dirname, './src/service'),
-            'Comp': path.resolve(__dirname, './src/components'),
-            'Views': path.resolve(__dirname, './src/views'),
-            'Api': path.resolve(__dirname, './src/api')
+            '@': path.resolve(__dirname, './src')
         }
     },
 
