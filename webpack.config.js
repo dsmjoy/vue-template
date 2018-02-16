@@ -18,13 +18,14 @@ var entries = function () {
     return map
 }
 
+
 let webpackConfig = {
     entry: entries(),
 
     output: {
         path: path.resolve(__dirname, './build'),
         publicPath: '',
-        filename: process.env.NODE_ENV === 'development' ? 'js/[name].js' : 'js/[name].js?[chunkhash]'
+        filename: process.env.NODE_ENV === 'development' ? 'js/[name].js' : 'js/[name].js?v=[chunkhash]'
     },
 
     resolve: {
@@ -96,7 +97,7 @@ let webpackConfig = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: 'css/[name].css?[contenthash]',
+            filename: 'css/[name].css?v=[contenthash]',
             allChunks: true
         }),
   

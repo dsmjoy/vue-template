@@ -7,8 +7,6 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-Vue.config.devtools = true
-
 import Login from './login/login.vue'
 import store from '@/store/index'
 
