@@ -5,15 +5,5 @@
     </keep-alive>
 </template>
 
-<script>
-export default {
-    data () {
-        return {
-            
-        }
-    }
-}
-</script>
-
-<style lang="scss">
-</style>
+<script src="./app.js"></script>
+<style lang="scss"></style>

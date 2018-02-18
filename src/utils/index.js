@@ -1,3 +1,7 @@
+
+/**
+ * 动态设置rem
+ */
 export function remAdjust () {
     var Width = window.screen.width
     var Height = window.screen.height
@@ -8,6 +12,14 @@ export function remAdjust () {
     document.querySelector('html').style.fontSize = 100 * scaleRatio + 'px'
 }
 
+export function wechatDetection () {
+    var ua = navigator.userAgent.toLowerCase()
+    var isWechat = ua.indexOf('micromessenger') != -1
+       
+    return isWechat
+}
+
 export default {
-    remAdjust
+    remAdjust,
+    wechatDetection
 }
