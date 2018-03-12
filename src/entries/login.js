@@ -10,9 +10,7 @@ Vue.use(Router)
 import Login from './login/login.vue'
 import store from '@/store/index'
 
-const routes = [
-
-]
+const routes = []
 
 const router = new Router({
     routes

@@ -18,14 +18,29 @@ var entries = function () {
     return map
 }
 
+const env = process.end.NODE_ENV
+
+let publicPath = '',
+    finename = '',
+    remotePath = ''
+
+if( env === 'production' ) {
+    publicPath = './'
+    finename = 'js/[name].[chunkhash].js'
+    remotePath = 'http://static.pocketuniversity.cn'
+} else if( env === 'development' ) {
+    publicPath = './'
+    finename = 'js/[name].js?v=[chunkhash]'
+    remotePath = 'http://static.pocketuniversity.com.cn'
+}
 
 let webpackConfig = {
     entry: entries(),
 
     output: {
         path: path.resolve(__dirname, './build'),
-        publicPath: '',
-        filename: process.env.NODE_ENV === 'development' ? 'js/[name].js' : 'js/[name].js?v=[chunkhash]'
+        publicPath: publicPath,
+        filename: finename
     },
 
     resolve: {
@@ -128,7 +143,9 @@ filenames.forEach(filename => {
     let htmlWebpackPlugin = new HtmlWebpackPlugin({
         template: './src/template.html',
         filename: filename + '.html',
-        chunks: [filename, 'vendors', 'manifest']
+        chunks: [filename, 'vendors', 'manifest'],
+        title: '应用名称',
+        remotePath: remotePath
     })
 
     webpackConfig.plugins.push( htmlWebpackPlugin )

@@ -1,0 +1,20 @@
+
+.hello__title[data-v-d4f18696] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  color: #333;
+}
+
+.card__title {
+  font-size: 20px;
+  color: pink;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
