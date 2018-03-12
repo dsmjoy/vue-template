@@ -15,7 +15,7 @@ export default function request (options) {
         axios(options)
             .then(({data}) => {
                 if( data.code > 10000 ) {
-                    reject(data)
+                    reject(data.msg)
                     return
                 }
 
