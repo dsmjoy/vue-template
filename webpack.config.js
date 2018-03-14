@@ -27,11 +27,11 @@ let publicPath = '',
 if( env === 'production' ) {
     publicPath = './'
     finename = 'js/[name].[chunkhash].js'
-    remotePath = 'http://static.pocketuniversity.cn'
+    remotePath = ''
 } else if( env === 'development' ) {
     publicPath = './'
     finename = 'js/[name].js?v=[chunkhash]'
-    remotePath = 'http://static.pocketuniversity.com.cn'
+    remotePath = ''
 }
 
 let webpackConfig = {
