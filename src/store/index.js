@@ -5,14 +5,14 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 // modules
-import sub from './modules/sub'
+import user from './modules/user'
 
 const store = new Vuex.Store({
     state: {
 
     },
     modules: {
-        sub
+        user
     },
     strict: process.env.NODE_ENV !== 'production'
 })
