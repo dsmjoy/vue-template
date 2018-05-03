@@ -18,7 +18,7 @@ var entries = function () {
     return map
 }
 
-const env = process.end.NODE_ENV
+const env = process.env.NODE_ENV
 
 let publicPath = '',
     finename = '',
