@@ -12,14 +12,27 @@ export function remAdjust () {
     document.querySelector('html').style.fontSize = 100 * scaleRatio + 'px'
 }
 
-export function wechatDetection () {
+export function platformDetector () {
+    if( wechatDetector() ) {
+        return 'weixin'
+    } else if( weiboDetector() ) {
+        return 'weibo'
+    } else {
+        return 'other'
+    }
+}
+
+export function wechatDetector () {
     var ua = navigator.userAgent.toLowerCase()
-    var isWechat = ua.indexOf('micromessenger') != -1
-       
-    return isWechat
+    return ua.match(/MicroMessenger/i) == 'micromessenger'
+}
+
+export function weiboDetector () {
+    var ua = navigator.userAgent.toLowerCase()
+    return ua.match(/WeiBo/i) == "weibo"
 }
 
 export default {
     remAdjust,
-    wechatDetection
+    platformDetector
 }
