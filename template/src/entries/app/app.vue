@@ -1,6 +1,6 @@
 
 <template lang="html">
-    <keep-alive>
+    <keep-alive :include="keepAliveRoutes">
         <router-view></router-view>
     </keep-alive>
 </template>

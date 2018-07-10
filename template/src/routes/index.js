@@ -12,6 +12,8 @@ import userRoutes from './modules/home'
 import User from '@/top-views/User/User.vue'
 /** user routes **/
 
+import { routerBeforeEachGuard, routerAfterEachGuard } from './guards'
+
 const routes = [
     {
         path: '/',
@@ -34,5 +36,8 @@ const routes = [
 const router = new Router({
     routes
 })
+
+router.beforeEach(routerBeforeEachGuard)
+router.afterEach(routerAfterEachGuard)
 
 export default router

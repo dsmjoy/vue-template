@@ -1,5 +1,5 @@
 
-// index 页面独立的初始化
+// index 入口独立的初始化
 import '@/styles/index.scss'
 import Vue from 'vue'
 import Vuex from 'vuex'
