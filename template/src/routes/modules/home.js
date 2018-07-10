@@ -5,11 +5,20 @@ const routes = [
         redirect: '/home/index',
     },
     {
-        name: 'homeindex',
+        name: 'home-index',
         path: '/home/index',    
         component: resolve => {
-            require.ensure(['@/views/Home/Index/Index.vue'], () => {
-                resolve(require('@/views/Home/Index/Index.vue'))
+            require.ensure(['@/views/home/index/index.vue'], () => {
+                resolve(require('@/views/home/index/index.vue'))
+            })
+        }
+    },
+    {
+        name: 'home-user',
+        path: '/home/user',    
+        component: resolve => {
+            require.ensure(['@/views/home/user/user.vue'], () => {
+                resolve(require('@/views/home/user/user.vue'))
             })
         }
     }

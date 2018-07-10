@@ -9,8 +9,15 @@ import user from './modules/user'
 
 const store = new Vuex.Store({
     state: {
-
+        isLogin: false
     },
+
+    mutations: {
+        updateLoginStatus (state, payload) {
+            state.isLogin = payload.isLogin
+        }
+    },
+
     modules: {
         user
     },

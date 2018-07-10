@@ -1,4 +1,5 @@
 import vbus from '@/services/vbus/vbus'
+import { mapMutations } from 'vuex'
 
 export default {
     data () {
@@ -17,7 +18,7 @@ export default {
 
             })
     
-            vbus.$on('$toast.show', (text = '') => {
+            vbus.$on('$toast.show', ({text = ''}) => {
                 
             })
         }

@@ -4,6 +4,7 @@
   "description": "vue template",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf build",
     "dev": "cross-env NODE_ENV=development webpack --watch --progress --config webpack.config.js",
     "server": "cross-env NODE_ENV=development webpack-dev-server -d --inline --hot --env.dev",
     "prod": "cross-env NODE_ENV=production webpack -p --progress --watch --config webpack.config.js"
@@ -27,6 +28,7 @@
     "html-webpack-plugin": "^2.28.0",
     "node-sass": "^4.5.0",
     "postcss-loader": "^2.0.6",
+    "rimraf": "^2.6.2",
     "sass-loader": "^6.0.2",
     "style-loader": "^0.18.2",
     "svg-sprite-loader": "^3.4.1",

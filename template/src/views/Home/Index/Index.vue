@@ -2,13 +2,12 @@
 <template>
     
     <div class="homeIndex">
-        <Hello></Hello>
-        <Card></Card>
+        <hello-world></hello-world>
         <Icon name="loading"></Icon>
         <Icon name="back"></Icon>
-       <p style="color: blue"> <Icon name="up"></Icon></p>
+        <p style="color: blue"> <Icon name="up"></Icon></p>
     </div>
 
 </template>
 
-<script src="./Index.js"></script>
+<script src="./index.js"></script>

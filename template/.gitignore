@@ -1,2 +1,4 @@
 node_modules/
 资源/
+build/
+process.md

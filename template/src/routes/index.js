@@ -4,13 +4,13 @@ Vue.use(Router)
 
 /** home routes **/
 import homeRoutes from './modules/home'
-import Home from '@/top-views/Home/Home.vue'
+import Home from '@/top-views/home/home.vue'
 /** home routes **/
 
-/** user routes **/
-import userRoutes from './modules/home'
-import User from '@/top-views/User/User.vue'
-/** user routes **/
+/** home routes **/
+import loginRoutes from './modules/login'
+import Login from '@/top-views/login/login.vue'
+/** home routes **/
 
 import { routerBeforeEachGuard, routerAfterEachGuard } from './guards'
 
@@ -26,10 +26,13 @@ const routes = [
         children: homeRoutes
     },
     {
-        name: 'user',
-        path: '/user',
-        component: User,
-        children: userRoutes
+        name: 'login',
+        path: '/login',
+        meta: {
+            requireNoAuth: true
+        },
+        component: Login,
+        children: loginRoutes
     }
 ]
 
