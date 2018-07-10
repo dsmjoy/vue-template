@@ -1,4 +1,3 @@
-import Vue from 'vue'
 import axios from 'axios'
 
 export function errorMap (code, extra) {

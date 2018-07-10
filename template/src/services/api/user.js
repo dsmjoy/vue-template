@@ -1,4 +1,4 @@
-import { request, errorMap } from '../utils/request'
+import { request, errorMap } from '../request/request'
 
 export function requestUserInfo ({ user_id }) {
     if( !user_id ) {

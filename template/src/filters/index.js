@@ -1,4 +1,7 @@
+export function hidePhone (phone) {
 
-export function timeFormat (timestamp) {
-    return new Date(timestamp * 1000)
+}
+
+export default {
+    hidePhone
 }
