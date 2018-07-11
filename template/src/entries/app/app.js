@@ -17,7 +17,7 @@ export default {
             vbus.$on('$loading.show', ({text = ''}) => {
 
             })
-    
+
             vbus.$on('$toast.show', ({text = ''}) => {
                 
             })
