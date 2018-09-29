@@ -1,0 +1,9 @@
+{
+    "name": "vue-template",
+    "uuid": "f31sj12p11mti17umn",
+    "oss": {
+        "bucket": "wx-static-online",
+        "path": "/vue-template"
+    },
+    "build_result_folder": "dist"
+}
