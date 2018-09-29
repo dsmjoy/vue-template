@@ -1,0 +1,10 @@
+{
+    "prompt": {
+        "name": {
+            "type": "string",
+            "required": true,
+            "message": "项目名称",
+            "default": "vue-template"
+        }
+    }
+}

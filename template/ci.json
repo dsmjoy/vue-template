@@ -1,5 +1,5 @@
 {
-    "name": "vue-template",
+    "name": "{{ name }}",
     "uuid": "f31sj12p11mti17umn",
     "oss": {
         "bucket": "xxx",
